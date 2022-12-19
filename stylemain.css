@@ -1,16 +1,74 @@
 body{
     padding: 0;
     margin: 0;
+    font-size: 1.25em;
 }
 
-nav ul{
+header{
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.1vh solid black;
+    margin-bottom: 2vh;
+}
 
+
+nav {
+    float: left;
+    width: 15%;
+    position: sticky;
+    top: 0;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 1vw;
+    margin: 0;
 }
 
 nav ul li{
-    
+
 }
 
+nav ul li ul{
+    padding: 0;
+    display: none;     /* transition doesn't work with display & visibility values, therefore you have to do it with the opacity:*/
+                        /*transition: all 0.5s linear; */
+}
 
+nav ul li:hover ul{
+    display: block;
+}
 
+main{
+    width: 69.8%;
+    float: left;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
 
+main article{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+aside{
+    float: right;
+    width: 15%;
+}
+
+footer{
+    clear: both;
+    border-top: 0.1vh solid black;
+    margin-top: 2vh;
+}
+
+footer p {
+    display: inline-block;
+
+}
+
+#block-for-footer-margin{
+    clear: both;
+    width: 100%;
+}
