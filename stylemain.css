@@ -2,8 +2,8 @@ body{
     padding: 0;
     margin: 0;
     font-size: 1.35em;
-    background-color: #424242;
     color: whitesmoke;
+    background-color: #2b2b2b;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,7 +11,7 @@ header{
     max-height: auto;
     width: 100%;
     text-align: center;
-    border-bottom: 0.1vh solid black;
+    border-bottom: 1px solid black;
     background-color: #2b2b2b;
     padding: 2.5vh 0 2.5vh 0;
     margin-bottom: 2.5vh;
@@ -51,9 +51,9 @@ nav ul li:hover ul{
 }
 
 main{
-    width: 79.9%;
+    width: 79.8%;
     float: left;
-    border-left: 0.1vw solid black;
+    border-left: 1px solid black;
     overflow: auto;
 }
 
@@ -66,8 +66,9 @@ main article{
 footer{
     text-align: center;
     clear: both;
-    border-top: 0.1vh solid black;
+    border-top: 1px solid black;
     margin-top: 2.5vh;
+    background-color: #2b2b2b;
 }
 
 footer p {
@@ -90,10 +91,14 @@ a:link{
 }
 
 main h1,h2{
-    padding: 1vw;
+    padding: 10px;
     display: inline-block;
     background-color: rgb(55, 55, 55);
     border-radius: 25px;
     box-shadow: 2px 2px 2px black;
+}
+
+#main-blocks{
+    background-color: #424242;
 }
 
