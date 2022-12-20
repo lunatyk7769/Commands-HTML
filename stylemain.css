@@ -1,11 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: brown;
+    background-color: black;
     font-size: 1.3em;
     background-image: url(background.jpg);
+    background-size:cover ;
     background-attachment:fixed ;
-    color:rgb(189, 187, 187);
+    background-repeat: no-repeat;
+    color:rgb(230, 228, 227);
     text-shadow: 1px 1px 1px black;
 }
 
@@ -14,18 +16,20 @@ header{
     width: 100%;
     background-color: rgba(30,30,30,0.95);
     padding:10px 0 10px 0 ;
+
 }
 
 header h1{
+    display: inline-block;
     margin: 0;
 }
 
 
 #main-blocks{
     background-color: rgba(60,60,60,0.95);
-    width: 65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 10px;
 }
 
@@ -50,7 +54,7 @@ nav ul li{
 
 nav ul li:hover{
     box-sizing: border-box;
-    background-color: rgba(65,65,65,0.8);
+    background-color: rgba(75,75,75,0.8);
     outline: 1px solid white;
     outline-offset: -1px; /* https://linuxhint.com/set-inner-border-css/ */
 }
@@ -70,12 +74,17 @@ a:link{
 
   
 main{
+    font-size: 1.1em;
     clear: both;
     padding: 0 2vw 2vw 2vw;
 }
 
 main ol{
     margin: 0;
+}
+
+main a{
+    text-decoration: none;
 }
 
 main h2{
@@ -98,3 +107,12 @@ footer p {
     display: inline-block;
 }
 
+footer p a {
+    text-decoration: none;
+}
+
+#for_time_script{
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
